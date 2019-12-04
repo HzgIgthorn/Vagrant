@@ -1,1 +1,7 @@
 vagrant --version				Versionsnummer von Vagrant
+vagrant init hashicorp/precise64			Installiert das Image precise64 von hashicorp
+vagrant up					Startet Vagrant mit der aktuellen Vagrant-Datei
+vagrant status				Zeigt den Status des Vagrant-Systems an
+vagrant ssh					Loggt sich über ssh in die Maschine in der Virtual Box
+vagrant suspend				Stoppt Vagrant und speichert status der Maschiene
+vagrant halt					Fährt die Vagrant Maschiene runter (kostet mehr Zeit als suspend)
