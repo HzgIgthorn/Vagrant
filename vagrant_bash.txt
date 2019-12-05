@@ -11,3 +11,5 @@ vagrant box add <name> <url>			lädt das Image <name> von der Url <url> herunter
 vagrant box list				Listet alle verfügbaren vagrant-images auf
 vagrant package --output <datei>.box		speichert eine laufende virtuellen Maschien in die Datei <datei>.box
 vagrant box add <name> <datei>.box		erstellt ein Image von der gespeicherten virtuellen Box mit Name <datei>.box unter <name>
+vagrant box update				lädt ein evt. verfügbares Update für das Image herunter
+vagrant provision				startet eine virtuelle Maschiene neu, wenn sich die Vagrant-Datei geändert hat
