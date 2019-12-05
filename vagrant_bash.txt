@@ -5,3 +5,9 @@ vagrant status				Zeigt den Status des Vagrant-Systems an
 vagrant ssh					Loggt sich über ssh in die Maschine in der Virtual Box
 vagrant suspend				Stoppt Vagrant und speichert status der Maschiene
 vagrant halt					Fährt die Vagrant Maschiene runter (kostet mehr Zeit als suspend)
+vagrant reload				führt suspend und up nacheinander aus
+vagrant destroy				entfernt eine virtuelle Maschiene aus der Virtual Box
+vagrant box add <name> <url>			lädt das Image <name> von der Url <url> herunter
+vagrant box list				Listet alle verfügbaren vagrant-images auf
+vagrant package --output <datei>.box		speichert eine laufende virtuellen Maschien in die Datei <datei>.box
+vagrant box add <name> <datei>.box		erstellt ein Image von der gespeicherten virtuellen Box mit Name <datei>.box unter <name>

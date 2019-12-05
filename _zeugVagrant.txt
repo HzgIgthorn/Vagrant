@@ -1,1 +1,3 @@
 https://github.com/HzgIgthorn/Vagrant.git		GitURL
+http://www.vagrantbox.es/			Website für Vagrant Boxes
+https://app.vagrantup.com			Vagrant Cloud
