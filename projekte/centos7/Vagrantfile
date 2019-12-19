@@ -98,6 +98,17 @@ Vagrant.configure("2") do |config|
 	chown vagrant:vagrant /home/vagrant/jenkins_data/remote-data/remote-key.pub
 	chmod 600 /home/vagrant/jenkins_data/remote-data/remote-key
 	docker cp /home/vagrant/jenkins_data/remote-data/remote-key jenkins:/tmp/remote-key
+	cp /vagrant/remote-data/script.sh /home/vagrant/jenkins_data/remote-data/script.sh
+	chown vagrant:vagrant /home/vagrant/jenkins_data/remote-data/script.sh
+	chmod 711 /home/vagrant/jenkins_data/remote-data/script.sh
+	dos2unix /home/vagrant/jenkins_data/remote-data/script.sh
+	docker cp /home/vagrant/jenkins_data/remote-data/script.sh remote_host:/tmp/script.sh
+	
+	# Creating ansible host
+	mkdir /home/vagrant/jenkins_data/jenkins-ansible
+	cp /vagrant/jenkins-ansible/dockerfile /home/vagrant/jenkins_data/jenkins-ansible/dockerfile
+	chown vagrant:vagrant /home/vagrant/jenkins_data/jenkins-ansible
+	chown vagrant:vagrant /home/vagrant/jenkins_data/jenkins-ansible/dockerfile
 	# mkdir /home/vagrant/jenkins_data/db_data
 	# chown vagrant:vagrant /home/vagrant/jenkins_data/db_data
 	# 
